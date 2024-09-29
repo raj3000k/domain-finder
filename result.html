@@ -1,0 +1,32 @@
+<!-- templates/results.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigation Results</title>
+</head>
+<body>
+    <h1>Investigation Results for {{ result['domain'] }}</h1>
+    
+    <h2>DNS History</h2>
+    <pre>{{ result['dns_history'] }}</pre>
+
+    <h2>Traceroute</h2>
+    <pre>{{ result['trace_result'] }}</pre>
+
+    <h2>IP Lookup Information</h2>
+    <pre>{{ result['ip_info'] }}</pre>
+
+    <h2>SSL Certificate Transparency Logs</h2>
+    <pre>{{ result['cert_info'] }}</pre>
+
+    <h2>WHOIS History</h2>
+    <pre>{{ result['whois_data'] }}</pre>
+
+    <h2>Web Scraping Data</h2>
+    <pre>{{ result['scrape_result'] }}</pre>
+    
+    <a href="/">Go Back</a>
+</body>
+</html>

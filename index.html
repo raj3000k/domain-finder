@@ -1,0 +1,18 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title >Website Investigation Tool</title>
+</head>
+<body>
+    <h1>Enter Domain for Investigation</h1>
+    <form action="/investigate" method="POST">
+        <label for="domain">Domain:</label>
+        <input type="text" id="domain" name="domain" required>
+        <button type="submit">Investigate</button>
+    </form>
+</body>
+</html>
